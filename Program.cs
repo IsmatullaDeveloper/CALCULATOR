@@ -1,4 +1,11 @@
-﻿System.Console.WriteLine("Salom hurmatli foydalanuvchi! Kalkulyator dasturimizga xush kelibsiz :)");
+﻿string password = "";
+
+do
+{
+    System.Console.WriteLine("Enter password");
+    password = Console.ReadLine();
+} while (password != "kod");
+System.Console.WriteLine("Salom hurmatli foydalanuvchi! Kalkulyator dasturimizga xush kelibsiz :)");
 // System.Console.Write("Keling tanishamiz. Ismingizni kiriting: ");
 // string greeting = Console.ReadLine();
 // System.Console.WriteLine($"Wohooo! Siz bilan tanishishdan xursandman {greeting}");
@@ -56,30 +63,12 @@ string result = operation switch
 
 System.Console.WriteLine(result);
 
-// int counter = 1;
-// while(counter <= firstNumber )
-// {
-//     if(counter%2==0)
-//         {System.Console.WriteLine(counter);}
-//     counter++;
-// }
 
-string password = "";
-
-do
+for (int iterator = 1; iterator <= 10; iterator++)
 {
-    System.Console.WriteLine("Enter password");
-    password = Console.ReadLine();
-} while (password != "kod");
-
-
-for (int i = 1; i <= firstNumber; i++)
-{
-    if (i % 2 == 0)
-        System.Console.WriteLine(i);
-}
-int counter = 10;
-for( int iterator = 0; iterator <= counter; iterator++)
-{
-    System.Console.WriteLine(iterator);
+    for( int innerIterator = 1; innerIterator <= 10; innerIterator++)
+    {
+        System.Console.WriteLine($"{iterator} * {innerIterator} = {iterator * innerIterator}");
+    }
+   System.Console.WriteLine();
 }
